@@ -1,0 +1,5 @@
+Symfony posee **componentes** y **bundles** que hacen muchas funciones, pero no todas. Un bridge es un conjunto de clases que extienden una librería en **Symfony** y hacen que forme parte de su sistema. Ejemplos de bridge: **Twig**, **Doctrine**, **Propel**, **Monolog, PHPUnit, SwiftMailer**.
+
+En ciencias de la computación un patrón bridge es utilizado para desacoplar una abstracción de su implementación de forma que los dos pueden variar de forma independiente. El bridge utiliza **encapsulación**, **agregación** y puede usar **herencia** para separar responsabilidades en clases diferentes.
+
+Cuando una clase varía con frecuencia, las características de la programación orientada a objetos resulta muy útil porque los cambios en el código del programa pueden hacerse fácilmente conociendo una pequeña parte del mismo. El patrón bridge es útil cuando la clase y lo que hace la clase varían con frecuencia. La clase en sí puede considerarse como la **implementación** y lo que hace es la **abstracción**. El patrón bridge puede también cosiderarse como dos capas de abstracción.
