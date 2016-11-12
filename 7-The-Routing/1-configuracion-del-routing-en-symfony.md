@@ -107,7 +107,7 @@ app:
 
 ### Prefijar routes importadas
 
-Puedes también establecer un prefijo _prefix_ a las routes importadas. Por ejemplo, si queremos prefijar todas las routes en el **Appbundle** con _/site_ (_/site/blog/{slug}_) en lugar de _/blog/{slug}_:
+Puedes también establecer un prefijo _prefix_ a las routes importadas. Por ejemplo, si queremos prefijar todas las routes en el **AppBundle** con _/site_ (_/site/blog/{slug}_) en lugar de _/blog/{slug}_:
 
 ```
 # app/config/routing.yml
@@ -118,3 +118,24 @@ app:
 ```
 
 La dirección de cada route cargada desde la nueva **routing resource** será ahora prejijada con el string _/site_.
+
+Si utilizas anotaciones, también puedes prefijar varias routes definiendo la anotación _@Route_ en la clase del controlador:
+
+```
+// src/AppBundle/Controller/BlogController.php
+
+/**
+ * @Route("/blog")
+ */
+class BlogController extends Controller
+{
+    /**
+     * @Route("/{slug}")
+     */
+    public function showAction($slug)
+    {
+        // la URL de este controlador es: /blog/{slug}
+        // ...
+    }
+}
+```
