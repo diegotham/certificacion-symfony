@@ -152,7 +152,7 @@ $comentarios = file_get_contents("comentarios.txt");
 echo htmlspecialchars($comentarios);
 ```
 
-Primero nos aseguramos de que no se guardan **comentarios vacíos**. Después se sanitizan los datos eliminando cualquier posible **etiqueta HTML** que pudiera contener. Finalmente, los comentarios se devuelven **filtrados**. La función _strip_tags_ hace que no sea posible insertar enlaces en los comentarios, ya que éstos utilizan una etiqueta <a> que será eliminada. Para que puedan insertarse se puede utilizar _htmlentities_ o _htmlspecialchars_ en su lugar.
+Primero nos aseguramos de que no se guardan **comentarios vacíos**. Después se sanitizan los datos eliminando cualquier posible **etiqueta HTML** que pudiera contener. Finalmente, los comentarios se devuelven **filtrados**. La función _strip_tags_ hace que no sea posible insertar enlaces en los comentarios, ya que éstos utilizan una etiqueta que será eliminada. Para que puedan insertarse se puede utilizar _htmlentities_ o _htmlspecialchars_ en su lugar.
 
 Hay que tener en cuenta que ninguna solución es fiable al 100%, y que es conveniente estar al tanto de novedades respecto a los **ataques Cross-Site Scripting** ya que van evolucionando a medida que lo hacen las plataformas que los facilitan (navegadores, HTML...).
 
