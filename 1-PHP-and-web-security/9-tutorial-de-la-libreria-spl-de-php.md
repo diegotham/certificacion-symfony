@@ -56,7 +56,7 @@ foreach ($iterador as $key => $value) {
 
 Normalmente se utiliza **ArrayObject**, una **clase que permite trabajar con objetos como si fueran arrays**. Esta clase crea directamente un **ArrayIterator** cuando se usa un _loop foreach_ o cuando se llama al método **ArrayIterator::getIterator()**. 
 
-Conviene apuntar que tanto ArrayObjet como ArrayIterator son **objetos**, y no se pueden usar funciones de arrays en ellos.
+Conviene apuntar que tanto ArrayObject como ArrayIterator son **objetos**, y no se pueden usar funciones de arrays en ellos.
 
 ArrayIterator está limitado a arrays unidimensionales, de un sólo nivel. Para poder utilizarlo en arrays multidimensionales se puede utilizar **RecursiveArrayIterator**. 
 
