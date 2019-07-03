@@ -156,7 +156,7 @@ $container = $client->getContainer();
 
 Ten en cuenta que esto no funciona si aislas el cliente o si utilizas una capa HTTP. Para una lista de services disponibles en tu aplicación, puedes emplear el comando _debug:container_.
 
-Si la información que deseas compribar está disponible desde el profiler, utilízalo en su lugar.
+Si la información que deseas comprobar está disponible desde el profiler, utilízalo en su lugar.
 
 #### Acceder los datos del Profiler
 
